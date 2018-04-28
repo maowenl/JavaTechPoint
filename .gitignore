@@ -1,0 +1,25 @@
+*.[oa]
+
+# no .a & *.o files
+*.[oa]
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in the target/ directory
+target/
+Screenshots/
+.idea/
+*.iml
+tmpTestNG.xml
+
+/logs/*
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory
+doc/**/*.pdf
+
+/tmp
